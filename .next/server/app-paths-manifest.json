@@ -1,0 +1,9 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/dashboard/artists/page": "app/dashboard/artists/page.js",
+  "/dashboard/genres/page": "app/dashboard/genres/page.js",
+  "/page": "app/page.js",
+  "/dashboard/languages/page": "app/dashboard/languages/page.js",
+  "/dashboard/songs/page": "app/dashboard/songs/page.js",
+  "/dashboard/page": "app/dashboard/page.js"
+}
