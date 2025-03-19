@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0 0% 3.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 3.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 3.9%;
+
+    --primary: 0 72% 67%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 96.1%;
+    --secondary-foreground: 0 0% 9%;
+
+    --muted: 0 0% 96.1%;
+    --muted-foreground: 0 0% 45.1%;
+
+    --accent: 0 72% 67%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 89.8%;
+    --input: 0 0% 89.8%;
+    --ring: 0 0% 3.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 0 0% 3.9%;
+    --foreground: 0 0% 98%;
+
+    --card: 0 0% 3.9%;
+    --card-foreground: 0 0% 98%;
+
+    --popover: 0 0% 3.9%;
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 72% 67%;
+    --primary-foreground: 0 0% 98%;
+
+    --secondary: 0 0% 14.9%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 14.9%;
+    --muted-foreground: 0 0% 63.9%;
+
+    --accent: 0 72% 67%;
+    --accent-foreground: 0 0% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 14.9%;
+    --input: 0 0% 14.9%;
+    --ring: 0 0% 83.1%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-light-surface text-foreground;
+  }
+}
+
+/* Fix mobile scrolling issues */
+html,
+body {
+  @apply h-full overflow-hidden;
+}
+
+#root {
+  @apply h-full overflow-hidden;
+}
+
+.dashboard-layout {
+  @apply h-full overflow-hidden flex flex-col;
+}
+
+.dashboard-content {
+  @apply flex-1 overflow-y-auto pb-20 md:pb-6;
+}
+
+/* Mobile song table styles */
+.song-table-mobile {
+  @apply w-full;
+}
+
+.song-table-mobile .song-row {
+  @apply flex flex-col p-4 border-b;
+}
+
+.song-table-mobile .song-header {
+  @apply flex justify-between items-center mb-2;
+}
+
+.song-table-mobile .song-details {
+  @apply grid grid-cols-2 gap-2 text-sm;
+}
+
+.song-table-mobile .song-detail-item {
+  @apply flex flex-col;
+}
+
+.song-table-mobile .song-detail-label {
+  @apply text-inactive-grey text-xs;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #e96f6f;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #d45c5c;
+}
+
