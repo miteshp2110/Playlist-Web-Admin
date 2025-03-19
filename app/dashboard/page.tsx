@@ -116,6 +116,7 @@ export default function Dashboard() {
           </Card>
         </div>
       </div>
+      <div style={{height:"200px",width:"100%" ,marginBottom:"50px",backgroundColor:"none"}}></div>
     </DashboardLayout>
   )
 }

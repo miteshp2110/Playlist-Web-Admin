@@ -268,6 +268,7 @@ export default function SongsPage() {
   }
 
   return (
+    <>
     <DashboardLayout>
       <div className="space-y-6">
         <div className="flex items-center justify-between">
@@ -559,7 +560,9 @@ export default function SongsPage() {
           </CardFooter>
         </Card>
       </div>
+    <div style={{height:"200px",width:"100%" ,marginBottom:"50px",backgroundColor:"none"}}></div>
     </DashboardLayout>
+    </>
   )
 }
 
